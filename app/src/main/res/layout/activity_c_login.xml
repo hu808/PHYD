@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/clogbg"
+    tools:context=".cLogin">
+    <!-- 保險公司登入背景 clogbg -->
+    <!-- 保險公司下拉選單 companytype ; id spcom -->
+
+    <TextView
+        android:id="@+id/gomain2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回首頁"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.97" />
+
+    <Spinner
+        android:id="@+id/spcom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/companytype"
+        android:entries="@array/companies"
+        android:paddingLeft="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.639"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.181" />
+
+    <EditText
+        android:id="@+id/cuser"
+        android:layout_width="266dp"
+        android:layout_height="45dp"
+        android:background="@drawable/usertype"
+        android:ems="10"
+        android:hint="輸入帳號"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+    <!-- 保險公司帳號 usertype ; id cuser -->
+    <EditText
+        android:id="@+id/cpwd"
+        android:layout_width="266dp"
+        android:layout_height="45dp"
+        android:background="@drawable/usertype"
+        android:ems="10"
+        android:hint="輸入密碼"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.44" />
+    <!-- 保險公司密碼 usertype ; id cpwd -->
+    <Button
+        android:id="@+id/clogbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/loginbtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.812" />
+    <!-- 保險公司登入按鈕 loginbtn ; id clogbtn -->
+</androidx.constraintlayout.widget.ConstraintLayout>

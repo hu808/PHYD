@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg5"
+    tools:context=".rHistoryPage2">
+    <!--騎士歷史紀錄2(該時段下)背景 bg6 背景顏色(該時段下):深藍色+中間表格底色+白色-->
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/mp_BarChart2"
+        android:layout_width="304dp"
+        android:layout_height="292dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main1btn" />
+
+    <Button
+        android:id="@+id/main1btn"
+        android:layout_width="72dp"
+        android:layout_height="89dp"
+        android:background="@drawable/rec2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/questbtn"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.007" />
+    <!--主畫面按鈕 main1 ; id main1btn -->
+    <Button
+        android:id="@+id/recordbtn"
+        android:clickable="false"
+        android:visibility="invisible"
+        android:layout_width="77dp"
+        android:layout_height="92dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:background="@drawable/rec2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/main1btn"
+        app:layout_constraintStart_toEndOf="@+id/history1btn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003" />
+    <!--行車紀錄按鈕 record ; id recordbtn -->
+    <Button
+        android:id="@+id/history1btn"
+        android:layout_width="79dp"
+        android:layout_height="90dp"
+        android:background="@drawable/history1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003" />
+    <!--歷史紀錄按鈕 history1 ; id history1btn -->
+    <Button
+        android:id="@+id/scorebtn"
+        android:layout_width="79dp"
+        android:layout_height="90dp"
+        android:background="@drawable/score"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.651"
+        app:layout_constraintStart_toStartOf="@+id/history1btn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.005" />
+    <!--安全分數按鈕 score ; id scorebtn -->
+    <Button
+        android:id="@+id/questbtn"
+        android:layout_width="48dp"
+        android:layout_height="86dp"
+        android:background="@drawable/question"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.005" />
+    <!--申訴按鈕 question ; id questbtn -->
+    <!--本時段危險次數文字(圖表上) shorttime ; id sdangertxt -->
+    <!--總里程文字(圖表下) _km_ ; id totalkmtxt -->
+    <TextView
+        android:id="@+id/sdangertxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/shorttime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main1btn" />
+
+    <!--天氣文字(圖表下) weathertxt ; id tweathertxt -->
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:stretchColumns="*"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mp_BarChart2">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#90E9E7">
+
+            <TextView
+                android:id="@+id/starttimetxt"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="開始時間"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/kilotxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="總里程(km)"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/kmhrtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="天氣"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="1sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#A0ABF5"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/t_start_time_data"
+                android:layout_width="50dp"
+                android:layout_height="55dp"
+                android:gravity="center"
+                android:text="--"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/t_km_data"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:gravity="center"
+                android:text="3.6"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/t_weather_imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                app:srcCompat="@drawable/sunny_wt"
+                tools:ignore="VectorDrawableCompat" />
+        </TableRow>
+    </TableLayout>
+
+    <!--時段危險駕駛列表(圖表下)(我先用Text格式，未加入 可下滑選單+資料) shortrec ; id sdangerlist -->
+
+    <Button
+        android:id="@+id/hbackbtn"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.99" />
+
+    <Button
+        android:id="@+id/video_btn"
+        android:layout_width="35dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/movie"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:text="影片連結 : "
+        app:layout_constraintBottom_toBottomOf="@+id/video_btn"
+        app:layout_constraintEnd_toStartOf="@+id/video_btn"
+        app:layout_constraintTop_toTopOf="@+id/video_btn"
+        app:layout_constraintVertical_bias="0.65999997" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_history2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/hbackbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context=".rMainPage">
+
+    <!--背景 android:background="@drawable/bg2" 騎士主畫面背景顏色:深藍色+下方四格(淺)-->
+    <!--按下開始後，背景變化 android:background="@drawable/bg3" 按下start，改變騎士主畫面背景顏色:深藍色+下方四格(深)-->
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="5dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/mainbtn"
+        android:layout_width="72dp"
+        android:layout_height="89dp"
+        android:background="@drawable/rec1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/questbtn"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.007" />
+    <!--主畫面按鈕 android:background="@drawable/main" 圖檔名:main; android:id="@+id/mainbtn" id名:mainbtn;-->
+    <!--行車紀錄按鈕 android:background="@drawable/record" 圖檔名:record; android:id="@+id/recordbtn" id名:recordbtn;-->
+    <Button
+        android:id="@+id/recordbtn"
+        android:clickable="false"
+        android:visibility="invisible"
+        android:layout_width="77dp"
+        android:layout_height="92dp"
+        android:background="@drawable/rec2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003" />
+
+    <Button
+        android:id="@+id/historybtn"
+        android:layout_width="79dp"
+        android:layout_height="90dp"
+        android:background="@drawable/history"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003" />
+    <!--歷史紀錄按鈕 android:background="@drawable/history" 圖檔名:history; android:id="@+id/historybtn" id名:historybtn;-->
+    <Button
+        android:id="@+id/scorebtn"
+        android:layout_width="79dp"
+        android:layout_height="90dp"
+        android:background="@drawable/score"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.651"
+        app:layout_constraintStart_toStartOf="@+id/historybtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.005"  />
+    <!--安全分數按鈕 android:background="@drawable/score" 圖檔名:score; android:id="@+id/scorebtn" id名:scorebtn;-->
+    <Button
+        android:id="@+id/questbtn"
+        android:layout_width="48dp"
+        android:layout_height="86dp"
+        android:background="@drawable/question"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.005" />
+    <!--申訴按鈕 android:background="@drawable/question" 圖檔名:question; android:id="@+id/questbtn" id名:questbtn;-->
+    <!--開始按鈕 android:background="@drawable/startbtn" 圖檔名:startbtn; android:id="@+id/rstartbtn" id名:rstartbtn;-->
+    <Button
+        android:id="@+id/r_startbtn_txt"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/start_photos"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainbtn"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            tools:visibility="invisible">
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="2sp" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="2sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#90E9E7"
+            tools:visibility="invisible">
+
+<!--            <TextView-->
+<!--                android:id="@+id/kilotxt"-->
+<!--                android:layout_width="1dip"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="開始時間"-->
+<!--                android:textColor="#000000"-->
+<!--                android:textSize="20dp"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/kmhrtxt"-->
+<!--                android:layout_width="1dip"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="結束時間"-->
+<!--                android:textColor="#000000"-->
+<!--                android:textSize="20dp"-->
+<!--                android:textStyle="bold" />-->
+
+        </TableRow>
+
+<!--        <TableRow-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="#90E9E7"-->
+<!--            tools:visibility="invisible">-->
+
+<!--&lt;!&ndash;            <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/km_to_catch"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="1dip"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="78dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:text="07:00"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:textSize="35sp" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/hr_to_catch"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="1dip"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="78dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:text="08:00"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:textSize="35sp" />&ndash;&gt;-->
+<!--        </TableRow>-->
+
+<!--        <TableRow-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="#FFFFFF">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView16"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textSize="2sp" />-->
+<!--        </TableRow>-->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#90E9E7">
+
+            <TextView
+                android:id="@+id/hrtxt"
+                android:layout_width="1dip"
+                android:layout_height="wrap_content"
+                android:text="定位"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/weathertxt"
+                android:layout_width="1dip"
+                android:layout_height="wrap_content"
+                android:text="天氣"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#A0ABF5">
+
+            <TextView
+                android:id="@+id/kmhr_to_catch"
+                android:layout_width="1dip"
+                android:layout_height="78dp"
+                android:gravity="center"
+                android:text="嘉義市"
+                android:textSize="35sp" />
+
+            <ImageView
+                android:id="@+id/weather_imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="78dp"
+                app:srcCompat="@drawable/sunny_wt"
+                tools:ignore="VectorDrawableCompat" />
+
+        </TableRow>
+    </TableLayout>
+    <!--天氣文字 android:background="@drawable/weathertxt" 圖檔名:weathertxt; android:id="@+id/weathertxt" id名:weathertxt;-->
+    <Button
+        android:id="@+id/rlogoutbtn"
+        android:layout_width="86dp"
+        android:layout_height="43dp"
+        android:background="@drawable/rlogout"
+        android:onClick="logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.17" />
+    <!--登出按鈕 android:background="@drawable/logoutbtn" 圖檔名:logoutbtn; android:id="@+id/rlogoutbtn" id名:rlogoutbtn;-->
+    <Button
+        android:id="@+id/r_stopbtn_txt"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/stop_photos"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questbtn"
+        app:layout_constraintVertical_bias="0.94" />
+
+    <TextView
+        android:id="@+id/透明屏障"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#9AF8F3F3"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/tableLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainbtn"
+        app:layout_constraintVertical_bias="1.0" />
+    <!--結束按鈕 android:background="@drawable/endbtn" 圖檔名:endbtn; android:id="@+id/rendbtn" id名:rendbtn;-->
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

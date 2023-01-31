@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mscorebg"
+    tools:context=".cCustomerScore">
+    <!--客戶安全分數背景(每月) memscorebg -->
+
+    <!--每月 id monthrbtn -->
+    <!--多月份平均 id monthsrbtn -->
+
+    <TextView
+        android:id="@+id/choosemonthtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="選擇月份"
+        android:textColor="#131313"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <!--開始年月下拉選單(我先用Text格式，未加入下拉功能+月曆) android:background="@drawable/datetype" 圖檔名:datetype; android:id="@+id/startdbtn" id名:startdbtn;-->
+
+    <Spinner
+        android:id="@+id/cspmonth1"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/companytype"
+        android:entries="@array/month"
+        android:paddingLeft="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/choosemonthtxt"
+        app:layout_constraintStart_toEndOf="@+id/choosemonthtxt"
+        app:layout_constraintTop_toTopOf="@+id/choosemonthtxt" />
+
+    <!--安全分數標題 safescore ; id sstxt -->
+    <!--危險行為標題 dangercal ; id dctxt -->
+
+
+    <TextView
+        android:id="@+id/dctxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="危險行為統計"
+        android:textColor="#131313"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/choosemonthtxt"
+        app:layout_constraintTop_toBottomOf="@+id/choosemonthtxt" />
+
+    <TableLayout
+        android:id="@+id/tableLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="100dp"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toTopOf="@+id/bkbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dctxt"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TableRow
+            android:id="@+id/rScore_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C88AF1ED"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/rScore_listtxt_km字"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="   總里程"
+                android:textColor="#191818"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/cScore_listtxt_km"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="--"
+                android:textColor="#191818"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/rScore_分隔1"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rScore_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#86BDA0EF"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/rScore_listtxt_r字"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="   闖紅燈"
+                android:textColor="#191818"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/cScore_listtxt_r"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="--"
+                android:textColor="#191818"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/rScore_分隔2"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rScore_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C88AF1ED"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/rScore_listtxt_f字"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="   重油 "
+                android:textColor="#191818"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/cScore_listtxt_f"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="--"
+                android:textColor="#191818"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/rScore_分隔3"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rScore_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#86BDA0EF"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/rScore_listtxt_h字"
+                android:layout_width="103dp"
+                android:layout_height="match_parent"
+                android:text="   急煞 "
+                android:textColor="#191818"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/cScore_listtxt_h"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="--"
+                android:textColor="#191818"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/rScore_分隔4"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rScore_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C88AF1ED"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/rScore_listtxt_n字"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="   夜騎"
+                android:textColor="#191818"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/cScore_listtxt_n"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="--"
+                android:textColor="#191818"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/rScore_分隔5"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rScore_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#86BDA0EF"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/rScore_listtxt_w字"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="   雨騎 "
+                android:textColor="#191818"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/cScore_listtxt_w"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="--"
+                android:textColor="#191818"
+                android:textSize="18sp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="2dp"
+        android:layout_height="182dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/tableLayout3"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/tableLayout3"
+        app:layout_constraintTop_toTopOf="@+id/tableLayout3" />
+
+    <Button
+        android:id="@+id/bkbtn"
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        android:background="@drawable/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.97" />
+
+    <!--返回按鈕 back ; id bkbtn -->
+</androidx.constraintlayout.widget.ConstraintLayout>

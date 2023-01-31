@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rlogbg"
+    tools:context=".rLogin">
+    <!-- 騎士註冊背景 rlogbg -->
+
+    <TextView
+        android:id="@+id/gomain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回首頁"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.97" />
+
+    <TextView
+        android:id="@+id/goregistNothing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="尚無帳號? "
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.83" />
+
+    <TextView
+        android:id="@+id/goregist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="立即註冊"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.69"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.83" />
+
+    <Button
+        android:id="@+id/forgotpassbtn"
+        android:layout_width="106dp"
+        android:layout_height="42dp"
+        android:background="#0D3761"
+        android:text="忘記密碼"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!--標題: app:srcCompat="@drawable/logintitle" 圖檔名:logintitle; android:id="@+id/rltitle" id名:rltitle; -->
+    <EditText
+        android:id="@+id/rluser"
+        android:layout_width="265dp"
+        android:layout_height="48dp"
+        android:background="@drawable/usertype"
+        android:ems="10"
+        android:hint="輸入註冊信箱"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.235" />
+    <!--騎士帳號: android:background="@drawable/typebox" 圖檔名:typebox; android:id="@+id/ruser" id名:ruser; -->
+    <!--騎士帳號圖示: app:srcCompat="@drawable/user" 圖檔名:user; android:id="@+id/rusericn" id名:rusericn; -->
+    <EditText
+        android:id="@+id/rlpwd"
+        android:layout_width="265dp"
+        android:layout_height="48dp"
+        android:background="@drawable/usertype"
+        android:ems="10"
+        android:hint="輸入密碼"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42" />
+    <!--騎士密碼: android:background="@drawable/typebox" 圖檔名:typebox; android:id="@+id/rpwd" id名:rpwd; -->
+    <!--騎士密碼圖示: app:srcCompat="@drawable/pwd" 圖檔名:pwd; android:id="@+id/rpwdicn" id名:rpwdicn; -->
+    <!--騎士登入按鈕: android:background="@drawable/loginbtn" 圖檔名:loginbtn; android:id="@+id/rlogbtn" id名:rlogbtn; -->
+
+    <Button
+        android:id="@+id/rllogbtn"
+        android:layout_width="139dp"
+        android:layout_height="48dp"
+        android:background="@drawable/loginbtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.76" />
+
+    <!--騎士尚無帳號: android:background="@drawable/gotoregistertxt" 圖檔名:gotoregistertxt; android:id="@+id/goregisterbtn" id名:goregisterbtn; -->
+</androidx.constraintlayout.widget.ConstraintLayout>

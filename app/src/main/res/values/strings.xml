@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">app01</string>
+    <string name="email">請輸入註冊的Email</string>
+    <string-array name="companies">
+        <item>00富邦產險</item>
+        <item>01南山產險</item>
+        <item>02國泰產險</item>
+    </string-array>
+    <string-array name="time">
+        <item>1個月</item>
+        <item>2個月</item>
+        <item>3個月</item>
+        <item>4個月</item>
+        <item>5個月</item>
+        <item>6個月</item>
+    </string-array>
+    <string-array name="month">
+        <item>2020-10</item>
+        <item>2020-11</item>
+    </string-array>
+    <string-array name="month1">
+        <item>2020-11-4</item>
+        <item>2020-11-5</item>
+    </string-array>
+    <string-array name="time2">
+        <item>20:17 - 20:32</item>
+    </string-array>
+    <string-array name="time3">
+        <item>10:25 - 10:32</item>
+    </string-array>
+</resources>

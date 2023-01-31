@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg5"
+    tools:context=".SearchscorePage">
+
+    <!--背景 android:background="@drawable/bg5" 騎士安全分數查詢背景顏色(該時段下):深藍色+白色-->
+
+    <!--背景 android:background="@drawable/bg5" 騎士安全分數背景顏色(該時段下):深藍色+白色-->
+    <!--主畫面按鈕 android:background="@drawable/main1" 圖檔名:main1; android:id="@+id/main1btn" id名:main1btn;-->
+
+    <Button
+        android:id="@+id/main1btn"
+        android:layout_width="72dp"
+        android:layout_height="89dp"
+        android:background="@drawable/rec2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/questbtn"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.007" />
+
+    <Button
+        android:id="@+id/recordbtn"
+        android:clickable="false"
+        android:visibility="invisible"
+        android:layout_width="77dp"
+        android:layout_height="92dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:background="@drawable/rec2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003" />
+    <!--行車紀錄按鈕 android:background="@drawable/record" 圖檔名:record; android:id="@+id/recordbtn" id名:recordbtn;-->
+    <Button
+        android:id="@+id/historybtn"
+        android:layout_width="79dp"
+        android:layout_height="90dp"
+        android:background="@drawable/history"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003" />
+    <!--歷史紀錄按鈕 android:background="@drawable/history" 圖檔名:history; android:id="@+id/historybtn" id名:historybtn;-->
+    <Button
+        android:id="@+id/score1btn"
+        android:layout_width="79dp"
+        android:layout_height="90dp"
+        android:background="@drawable/score1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.651"
+        app:layout_constraintStart_toStartOf="@+id/historybtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.005" />
+    <!--安全分數按鈕 android:background="@drawable/score1" 圖檔名:score1; android:id="@+id/score1btn" id名:score1btn;-->
+    <Button
+        android:id="@+id/questbtn"
+        android:layout_width="48dp"
+        android:layout_height="86dp"
+        android:background="@drawable/question"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.005"  />
+    <!--申訴按鈕 android:background="@drawable/question" 圖檔名:question; android:id="@+id/questbtn" id名:questbtn;-->
+    <!--選擇開始年月 android:background="@drawable/startdate" 圖檔名:startdate; android:id="@+id/startdtxt" id名:startdtxt;-->
+    <TextView
+        android:id="@+id/startdtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="選擇起始年月"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recordbtn" />
+
+    <!--選擇結束年月 android:background="@drawable/enddate" 圖檔名:enddate; android:id="@+id/enddtxt" id名:enddtxt;-->
+    <TextView
+        android:id="@+id/enddtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="選擇結束年月"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/startdtxt"
+        app:layout_constraintTop_toBottomOf="@+id/startdtxt" />
+
+    <!--開始年月下拉選單(我先用Text格式，未加入下拉功能+月曆) android:background="@drawable/datetype" 圖檔名:datetype; android:id="@+id/startdbtn" id名:startdbtn;-->
+    <Spinner
+        android:id="@+id/spmonth1"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:background="@drawable/companytype"
+        android:entries="@array/month"
+        android:paddingLeft="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/startdtxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/startdtxt"
+        app:layout_constraintTop_toTopOf="@+id/startdtxt" />
+
+    <!--結束年月下拉選單(我先用Text格式，未加入下拉功能+月曆) android:background="@drawable/datetype" 圖檔名:datetype; android:id="@+id/enddbtn" id名:enddbtn;-->
+    <Spinner
+        android:id="@+id/spmonth2"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:background="@drawable/companytype"
+        android:entries="@array/month"
+        android:paddingLeft="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/enddtxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/startdtxt"
+        app:layout_constraintTop_toTopOf="@+id/enddtxt" />
+
+    <!--查詢年月分數按鈕 android:background="@drawable/search1" 圖檔名:search1; android:id="@+id/searchsbtn" id名:searchsbtn;-->
+    <Button
+        android:id="@+id/searchsbtn"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/search1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spmonth2" />
+
+    <TextView
+        android:id="@+id/sresulttxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="查詢結果 :"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/enddtxt"
+        app:layout_constraintTop_toBottomOf="@+id/searchsbtn" />
+    <!--查詢結果文字 android:background="@drawable/sresult" 圖檔名:sresult; android:id="@+id/sresulttxt" id名:sresulttxt;-->
+
+    <!--查詢結果列表(我先用Text格式，未加入下拉功能+資料+讚) android:background="@drawable/resultrec" 圖檔名:resultrec; android:id="@+id/sresultlist" id名:sresultlist;-->
+    <!--查詢結果列表(如果按下，背景要變成resultrec2)-->
+
+    <Button
+        android:id="@+id/scorebackbtn"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.99" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_SearchScore"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/scorebackbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sresulttxt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

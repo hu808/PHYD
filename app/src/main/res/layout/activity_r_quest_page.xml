@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg5"
+    tools:context=".rQuestPage">
+
+    <!--背景 android:background="@drawable/bg5" 騎士申訴背景顏色(該時段下):深藍色+白色-->
+
+    <TextView
+        android:id="@+id/ymddate2"
+        android:layout_width="128dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/datetyperec"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="date"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/qdatetxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/qdatetxt"
+        app:layout_constraintTop_toTopOf="@+id/qdatetxt" />
+
+    <Button
+        android:id="@+id/main1btn"
+        android:layout_width="72dp"
+        android:layout_height="89dp"
+        android:background="@drawable/rec2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/quest1btn"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.007" />
+    <!--主畫面按鈕 android:background="@drawable/main1" 圖檔名:main1; android:id="@+id/main1btn" id名:main1btn;-->
+    <Button
+        android:id="@+id/recordbtn"
+        android:clickable="false"
+        android:visibility="invisible"
+        android:layout_width="77dp"
+        android:layout_height="92dp"
+        android:background="@drawable/rec2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003" />
+    <!--行車紀錄按鈕 android:background="@drawable/record" 圖檔名:record; android:id="@+id/recordbtn" id名:recordbtn;-->
+    <Button
+        android:id="@+id/historybtn"
+        android:layout_width="79dp"
+        android:layout_height="90dp"
+        android:background="@drawable/history"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003" />
+    <!--歷史紀錄按鈕 android:background="@drawable/history" 圖檔名:history; android:id="@+id/historybtn" id名:historybtn;-->
+    <Button
+        android:id="@+id/scorebtn"
+        android:layout_width="79dp"
+        android:layout_height="90dp"
+        android:background="@drawable/score"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.651"
+        app:layout_constraintStart_toStartOf="@+id/historybtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.005" />
+    <!--安全分數按鈕 android:background="@drawable/score" 圖檔名:score; android:id="@+id/scorebtn" id名:scorebtn;-->
+    <Button
+        android:id="@+id/quest1btn"
+        android:layout_width="48dp"
+        android:layout_height="86dp"
+        android:background="@drawable/question1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.005" />
+    <!--申訴按鈕 android:background="@drawable/question1" 圖檔名:question1; android:id="@+id/quest1btn" id名:quest1btn;-->
+    <TextView
+        android:id="@+id/qdatetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="選擇日期 :"
+        android:textColor="#090909"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/historybtn" />
+    <!--選擇日期文字 android:background="@drawable/selectdate" 圖檔名:selectdate; android:id="@+id/qdatetxt" id名:qdatetxt;-->
+    <!--選擇日期下拉選單(我先用Text格式，未加入下拉功能+月曆) android:background="@drawable/selectymd" 圖檔名:selectymd; android:id="@+id/qymdbtn" id名:qymdbtn;-->
+    <!--選擇時段文字 android:background="@drawable/time" 圖檔名:time; android:id="@+id/qtimetxt" id名:qtimetxt;-->
+
+    <TextView
+        android:id="@+id/qtimetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="選擇時段 :"
+        android:textColor="#050505"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/qdatetxt"
+        app:layout_constraintTop_toBottomOf="@+id/qdatetxt" />
+
+    <!--選擇時段下拉選單(我先用Text格式，未加入下拉功能+時鐘?) android:background="@drawable/selectymd" 圖檔名:selectymd; android:id="@+id/qtimebtn" id名:qtimebtn;-->
+
+    <!--申訴內容文字 android:background="@drawable/qthing" 圖檔名:qthing; android:id="@+id/qthingtxt" id名:qthingtxt;-->
+    <!--附註文字 android:background="@drawable/ps" 圖檔名:ps; android:id="@+id/qpstxt" id名:qpstxt;-->
+    <TextView
+        android:id="@+id/qthingtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="申訴內容 :"
+        android:textColor="#020202"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/qdatetxt"
+        app:layout_constraintTop_toBottomOf="@+id/qtimetxt" />
+
+    <!--附註欄位 android:background="@drawable/psbox" 圖檔名:psbox; android:id="@+id/qpsbox" id名:qpsbox;-->
+    <TextView
+        android:id="@+id/qpstxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="附註 :"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/qthingtxt"
+        app:layout_constraintTop_toBottomOf="@+id/qthingtxt" />
+
+    <Button
+        android:id="@+id/submitbtn"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#D0E4E2E2"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/submitbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/qpstxt"
+        app:layout_constraintTop_toBottomOf="@+id/qpstxt"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_Quest2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/qpstxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/qthingtxt"
+        app:layout_constraintTop_toBottomOf="@+id/qthingtxt" />
+
+    <Spinner
+        android:id="@+id/spinner_Q"
+        android:layout_width="160dp"
+        android:layout_height="33dp"
+        android:background="@drawable/companytype"
+        app:layout_constraintBottom_toBottomOf="@+id/qtimetxt"
+        app:layout_constraintStart_toStartOf="@+id/ymddate2"
+        app:layout_constraintTop_toTopOf="@+id/qtimetxt" />
+
+    <!--提交按鈕 android:background="@drawable/submit" 圖檔名:submit; android:id="@+id/submitbtn" id名:submitbtn;-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

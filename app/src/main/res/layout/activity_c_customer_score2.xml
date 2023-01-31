@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/memscorebg2"
+    tools:context=".cCustomerScore2">
+    <!--客戶安全分數背景(多月份平均) memscorebg2 -->
+    <RadioButton
+        android:id="@+id/monthrbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="每月"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="74dp" />
+    <!--每月 id monthrbtn -->
+    <RadioButton
+        android:id="@+id/monthsrbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="多月份平均"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="190dp"
+        tools:layout_editor_absoluteY="74dp" />
+    <!--多月份平均 id monthsrbtn -->
+    <TextView
+        android:id="@+id/selec1"
+        android:layout_width="126dp"
+        android:layout_height="33dp"
+        android:background="@drawable/datetype"
+        android:hint="2020-03"
+        android:paddingLeft="10dp"
+        android:paddingTop="2dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="180dp"
+        tools:layout_editor_absoluteY="112dp" />
+    <!--選擇起始月份下拉選單(還沒加入) datetype ; id selec1 -->
+    <TextView
+        android:id="@+id/selec2"
+        android:layout_width="126dp"
+        android:layout_height="33dp"
+        android:background="@drawable/datetype"
+        android:hint="2020-06"
+        android:paddingLeft="10dp"
+        android:paddingTop="2dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="180dp"
+        tools:layout_editor_absoluteY="154dp" />
+    <!--選擇結束月份下拉選單(還沒加入) datetype ; id selec2 -->
+    <TextView
+        android:id="@+id/sstxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/safescore"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="188dp" />
+    <!--安全分數標題 safescore ; id sstxt -->
+    <TextView
+        android:id="@+id/dctxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dangercal"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="392dp" />
+    <!--危險行為標題 dangercal ; id dctxt -->
+    <Button
+        android:id="@+id/bkbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="670dp" />
+    <!--返回按鈕 back ; id bkbtn -->
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg5"
+    tools:context=".rHistoryPage">
+    <!--歷史紀錄背景 bg5 -->
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/mp_BarChart"
+        android:layout_width="304dp"
+        android:layout_height="292dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ddangertxt" />
+
+    <Button
+        android:id="@+id/main1btn"
+        android:layout_width="72dp"
+        android:layout_height="89dp"
+        android:background="@drawable/rec2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/questbtn"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.007" />
+    <!--主畫面按鈕 main1 ; id main1btn -->
+    <Button
+        android:id="@+id/recordbtn"
+        android:clickable="false"
+        android:visibility="invisible"
+        android:layout_width="77dp"
+        android:layout_height="92dp"
+        android:background="@drawable/rec2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="@+id/history1btn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003" />
+    <!--行車紀錄按鈕 record ; id recordbtn -->
+    <Button
+        android:id="@+id/history1btn"
+        android:layout_width="79dp"
+        android:layout_height="90dp"
+        android:background="@drawable/history1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003" />
+    <!--歷史紀錄按鈕 history1 ; id history1btn-->
+    <Button
+        android:id="@+id/scorebtn"
+        android:layout_width="79dp"
+        android:layout_height="90dp"
+        android:background="@drawable/score"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.651"
+        app:layout_constraintStart_toStartOf="@+id/history1btn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.005"  />
+    <!--安全分數按鈕  score ; id scorebtn -->
+    <Button
+        android:id="@+id/questbtn"
+        android:layout_width="48dp"
+        android:layout_height="86dp"
+        android:background="@drawable/question"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.005" />
+    <!--申訴按鈕 question ; id questbtn -->
+
+    <!--選擇日期文字 selectdate ; id datetxt -->
+    <!--選擇日期下拉選單(我先用text格式表示，未加入下拉功能+顯示月曆) selectdate ; id ymddate -->
+    <!--送出按鈕 send ; id sendbtn-->
+
+    <Button
+        android:id="@+id/sendbtn"
+        android:layout_width="85dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/send"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.96"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.136" />
+
+    <TextView
+        android:id="@+id/ymddate"
+        android:layout_width="128dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/datetyperec"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="date"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.143" />
+
+    <TextView
+        android:id="@+id/datetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:gravity="center_horizontal"
+        android:text="選擇日期"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/sendbtn"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.121" />
+
+    <TextView
+        android:id="@+id/ddangertxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/daydanger"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ymddate" />
+    <!--本日危險駕駛次數標題 daydanger ; id ddangertxt-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_history1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mp_BarChart"
+        tools:layout_editor_absoluteX="0dp" />
+    <!--危險駕駛次數按鈕 dangericn ;id dbtn -->
+    <!--影片連結按鈕 movie ;id mtbn -->
+</androidx.constraintlayout.widget.ConstraintLayout>

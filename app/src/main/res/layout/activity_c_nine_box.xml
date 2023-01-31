@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ninebg"
+    tools:context=".cNineBox">
+    <!--選擇保費試算因子九宮格背景 ninebg -->
+    <!--闖紅燈因子 r ; id rbtn -->
+    <!--超速因子 e ; id ebtn -->
+    <!--里程數因子 k ; id kbtn -->
+    <Button
+        android:id="@+id/rbtn"
+        android:layout_width="95dp"
+        android:layout_height="130dp"
+        android:background="@drawable/r"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42" />
+
+    <!--重油因子 f ; id fbtn -->
+    <Button
+        android:id="@+id/kbtn"
+        android:layout_width="95dp"
+        android:layout_height="130dp"
+        android:background="@drawable/k"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42" />
+
+    <!--急煞因子 h ; id hbtn -->
+    <!--夜騎因子 n ; id nbtn -->
+    <!--雨天騎車因子 w ; id wbtn -->
+    <!--騎車通話因子 a ; id abtn -->
+
+    <Button
+        android:id="@+id/fbtn"
+        android:layout_width="95dp"
+        android:layout_height="130dp"
+        android:background="@drawable/feet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42" />
+
+    <Button
+        android:id="@+id/hbtn"
+        android:layout_width="95dp"
+        android:layout_height="130dp"
+        android:background="@drawable/h"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.74" />
+
+    <Button
+        android:id="@+id/nbtn"
+        android:layout_width="95dp"
+        android:layout_height="130dp"
+        android:background="@drawable/n"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.74" />
+
+    <Button
+        android:id="@+id/wbtn"
+        android:layout_width="95dp"
+        android:layout_height="130dp"
+        android:background="@drawable/w"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.74" />
+
+    <Button
+        android:id="@+id/ctnSelectScorebtn"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ctn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.94" />
+
+    <Button
+        android:id="@+id/cbackSelect1btn"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:background="@drawable/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.94" />
+    <!--繼續按鈕 ctn ; id ctnbtn -->
+</androidx.constraintlayout.widget.ConstraintLayout>

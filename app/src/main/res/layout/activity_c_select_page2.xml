@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/memberbg3"
+    tools:context=".cSelectPage2">
+    <!--保費試算管理修改頁面背景 memberbg3 -->
+    <Button
+        android:id="@+id/clogoutbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/clogout"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="74dp" />
+    <!--登出按鈕 clogout ; id clogoutbtn-->
+    <TextView
+        android:id="@+id/ctime"
+        android:layout_width="81dp"
+        android:layout_height="30dp"
+        android:hint="3個月"
+        android:paddingLeft="18dp"
+        android:paddingTop="3dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="168dp"
+        tools:layout_editor_absoluteY="140dp" />
+    <!--保費時程顯示 id ctime-->
+    <TextView
+        android:id="@+id/fmoney1"
+        android:layout_width="84dp"
+        android:layout_height="32dp"
+        android:ems="10"
+        android:hint="2,200"
+        android:inputType="number"
+        android:paddingLeft="20dp"
+        android:paddingTop="3dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="168dp"
+        tools:layout_editor_absoluteY="226dp" />
+    <!--基礎保費顯示 id fmoney1-->
+    <TextView
+        android:id="@+id/cmoneytxt1"
+        android:layout_width="41dp"
+        android:layout_height="33dp"
+        android:background="@drawable/money"
+        tools:layout_editor_absoluteX="252dp"
+        tools:layout_editor_absoluteY="226dp" />
+    <!--基礎保費單位 id cmoneytxt1-->
+    <TextView
+        android:id="@+id/fmoney2"
+        android:layout_width="84dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+        android:hint="4,200"
+        android:inputType="number"
+        android:paddingLeft="20dp"
+        android:paddingTop="3dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="168dp"
+        tools:layout_editor_absoluteY="269dp" />
+    <!--保費全額顯示 id fmoney2-->
+    <TextView
+        android:id="@+id/cmoneytxt2"
+        android:layout_width="41dp"
+        android:layout_height="33dp"
+        android:background="@drawable/money"
+        tools:layout_editor_absoluteX="252dp"
+        tools:layout_editor_absoluteY="268dp" />
+    <!--保費全額單位 id cmoneytxt2-->
+    <TextView
+        android:id="@+id/cpercent"
+        android:layout_width="60dp"
+        android:layout_height="28dp"
+        android:ems="10"
+        android:hint="0.4"
+        android:inputType="number"
+        android:paddingLeft="20dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="168dp"
+        tools:layout_editor_absoluteY="185dp" />
+    <!--保費費率顯示 id cpercent-->
+    <TextView
+        android:id="@+id/mmoneytxt"
+        android:layout_width="55dp"
+        android:layout_height="38dp"
+        android:background="@drawable/mmin"
+        tools:layout_editor_absoluteX="228dp"
+        tools:layout_editor_absoluteY="178dp" />
+    <!--保費費率單位 id mmoneytxt-->
+    <TextView
+        android:id="@+id/selecq1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/b10"
+        android:hint="闖紅燈"
+        android:paddingLeft="20dp"
+        android:paddingTop="7dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="372dp" />
+    <!--因子1 b10 ; id selecq1-->
+    <TextView
+        android:id="@+id/selecq2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/b10"
+        android:hint="X"
+        android:paddingLeft="44dp"
+        android:paddingTop="7dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="372dp" />
+    <!--門檻值1 b10 ; id selecq2-->
+    <TextView
+        android:id="@+id/selecq3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/b10"
+        android:hint="10 分/次"
+        android:paddingLeft="10dp"
+        android:paddingTop="7dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="253dp"
+        tools:layout_editor_absoluteY="372dp" />
+    <!--扣分1 b10 ; id selecq3-->
+    <!--客戶列表按鈕 searchmember ; id smembtn-->
+    <Button
+        android:id="@+id/changebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/change"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="648dp" />
+    <!--修改按鈕 change ; id changebtn-->
+</androidx.constraintlayout.widget.ConstraintLayout>

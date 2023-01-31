@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/combg0"
+    tools:context=".cSelectScorePage">
+
+    <TextView
+        android:id="@+id/cselectstxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="輸入門檻值:"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.12" />
+
+    <TextView
+        android:id="@+id/credtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:text="闖紅燈:  平均每月少於"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cselectstxt" />
+
+    <TextView
+        android:id="@+id/credtxt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="46dp"
+        android:text="次"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/credtxt2"
+        app:layout_constraintTop_toBottomOf="@+id/cselectstxt" />
+
+    <EditText
+        android:id="@+id/credtxt2"
+        android:layout_width="51dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="46dp"
+        android:background="@drawable/moneyrec"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#D3C6C6"
+        android:textSize="18dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/credtxt"
+        app:layout_constraintTop_toBottomOf="@+id/cselectstxt" />
+
+    <TextView
+        android:id="@+id/ckmtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="里程數:  平均每月至少"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/credtxt" />
+
+    <TextView
+        android:id="@+id/ckmtxt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="35dp"
+        android:text="km"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/ckmtxt2"
+        app:layout_constraintTop_toBottomOf="@+id/credtxt1" />
+
+    <EditText
+        android:id="@+id/ckmtxt2"
+        android:layout_width="51dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/moneyrec"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#D3C6C6"
+        android:textSize="18dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/ckmtxt"
+        app:layout_constraintTop_toBottomOf="@+id/credtxt2" />
+
+    <TextView
+        android:id="@+id/cftxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="重    油:  平均每月少於"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ckmtxt" />
+
+    <TextView
+        android:id="@+id/cftxt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="35dp"
+        android:text="次"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/cftxt2"
+        app:layout_constraintTop_toBottomOf="@+id/ckmtxt1" />
+
+    <EditText
+        android:id="@+id/cftxt2"
+        android:layout_width="51dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/moneyrec"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#D3C6C6"
+        android:textSize="18dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/cftxt"
+        app:layout_constraintTop_toBottomOf="@+id/ckmtxt2" />
+
+    <TextView
+        android:id="@+id/chtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="急    煞:  平均每月少於"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cftxt" />
+
+    <TextView
+        android:id="@+id/chtxt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="35dp"
+        android:text="次"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/chtxt2"
+        app:layout_constraintTop_toBottomOf="@+id/cftxt1" />
+
+    <EditText
+        android:id="@+id/chtxt2"
+        android:layout_width="51dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/moneyrec"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#D3C6C6"
+        android:textSize="18dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/chtxt"
+        app:layout_constraintTop_toBottomOf="@+id/cftxt2" />
+
+    <TextView
+        android:id="@+id/cnighttxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="夜    騎:  平均每月少於"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chtxt" />
+
+    <TextView
+        android:id="@+id/cnighttxt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="35dp"
+        android:text="次"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/cnighttxt2"
+        app:layout_constraintTop_toBottomOf="@+id/chtxt1" />
+
+    <EditText
+        android:id="@+id/cnighttxt2"
+        android:layout_width="51dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/moneyrec"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#D3C6C6"
+        android:textSize="18dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/cnighttxt"
+        app:layout_constraintTop_toBottomOf="@+id/chtxt2" />
+
+    <TextView
+        android:id="@+id/cweathertxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="雨天騎車:  平均每月少於"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cnighttxt" />
+
+    <TextView
+        android:id="@+id/cweathertxt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="35dp"
+        android:text="次"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/cweathertxt2"
+        app:layout_constraintTop_toBottomOf="@+id/cnighttxt1" />
+
+    <EditText
+        android:id="@+id/cweathertxt2"
+        android:layout_width="51dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/moneyrec"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#D3C6C6"
+        android:textSize="18dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/cweathertxt"
+        app:layout_constraintTop_toBottomOf="@+id/cnighttxt2" />
+
+    <Button
+        android:id="@+id/surebtn"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:background="@drawable/sure"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.94"/>
+
+    <Button
+        android:id="@+id/cbackninebtn"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:background="@drawable/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.94"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

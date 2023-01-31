@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/combg0"
+    tools:context=".cSelectPage1">
+
+    <TextView
+        android:id="@+id/cselectstxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="選擇資料時程長度 :"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.246" />
+    <!--保費試算管理添加畫面1 memberbg4 -->
+    <!--登出按鈕 clogout ; id clogoutbtn -->
+
+    <!--保費十成下拉選單 datetype ; id sptime -->
+    <!--初始保費輸入 moneyrec ; id fmoney1 -->
+    <!--初始保費單位 money ; id cmoneytxt1 -->
+    <!--全額保費輸入 moneyrec ; id fmoney2 -->
+    <!--全額保費單位 money ; id cmoneytxt2 -->
+    <!--保費費率輸入 percentrec ; id cpercent -->
+    <!--保費費率單位 mmin ; id mmoneytxt -->
+
+    <Spinner
+        android:id="@+id/sptime"
+        android:layout_width="81dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/datetype"
+        android:entries="@array/time"
+        android:paddingLeft="6dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cselectstxt"
+        app:layout_constraintStart_toEndOf="@+id/cselectstxt"
+        app:layout_constraintTop_toTopOf="@+id/cselectstxt" />
+
+    <Button
+        android:id="@+id/ctnninebtn"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ctn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.88" />
+
+    <Button
+        android:id="@+id/cbackcmainpagebtn"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:background="@drawable/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.88" />
+    <!--繼續按鈕 ctn ; id ctnbtn -->
+</androidx.constraintlayout.widget.ConstraintLayout>
